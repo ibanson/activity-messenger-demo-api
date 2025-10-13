@@ -28,6 +28,7 @@ class TaskController extends Controller
         ]);
     }
 
+    /** Update board task */
     public function update(Board $board, Task $task, UpdateBoardTaskRequest $request): JsonResponse
     {
         $data = $this->taskRepository->updateTask($board, $task, $request->validated());
@@ -38,6 +39,7 @@ class TaskController extends Controller
         ]);
     }
 
+    /** Delete board task */
     public function destroy(Board $board, Task $task): JsonResponse
     {
         $deleted = $this->taskRepository->deleteTask($task);

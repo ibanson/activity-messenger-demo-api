@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Board;
-use App\Models\Task;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -19,22 +18,20 @@ class TaskSeeder extends Seeder
 
         $boardsData = [
             [
-            'title' => 'Board Projets',
-            'tasks' => [
-                ['title' => 'Appeler client A'],
-                ['title' => 'Coder la nouvelle fonctionnalité'],
+                'title' => 'Board Projets',
+                'tasks' => [
+                    ['title' => 'Appeler client A'],
+                    ['title' => 'Coder la nouvelle fonctionnalité'],
+                ],
             ],
-        ],
-        [
-            'title' => 'Board Perso',
-            'tasks' => [
-                ['title' => 'Aller chez Costco =)'],
-                ['title' => 'Rappeler le vétérinaire'],
+            [
+                'title' => 'Board Perso',
+                'tasks' => [
+                    ['title' => 'Aller chez Costco =)'],
+                    ['title' => 'Rappeler le vétérinaire'],
+                ],
             ],
-        ],
         ];
-
-
 
         foreach ($boardsData as $board) {
 

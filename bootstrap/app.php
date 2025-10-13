@@ -23,7 +23,7 @@ $app = Application::configure(basePath: dirname(__DIR__))
         $exceptions->render(function (NotFoundHttpException $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Resource not found.'
+                'message' => 'Resource not found.',
             ], Response::HTTP_NOT_FOUND);
         });
 
@@ -33,7 +33,7 @@ $app = Application::configure(basePath: dirname(__DIR__))
                 'success' => false,
                 'message' => config('app.debug')
                     ? $e->getMessage()
-                    : 'An internal server error occurred.'
+                    : 'An internal server error occurred.',
             ], Response::HTTP_INTERNAL_SERVER_ERROR);
         });
 
