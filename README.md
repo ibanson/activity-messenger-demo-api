@@ -12,7 +12,7 @@ Application frontend réalisée dans le cadre d’un **test technique**.
 
 ## Stack technique
 
-- [Laravel 11](https://laravel.com/) – PHP framework
+- [Laravel 12](https://laravel.com/) – PHP framework
 - [PostgreSQL 15](https://www.postgresql.org/) – Relational database
 - [PHP-FPM 8.2](https://www.php.net/) – Runtime used in Docker
 - [Nginx](https://nginx.org/) – Reverse proxy / web server
